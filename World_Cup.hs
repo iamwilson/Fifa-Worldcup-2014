@@ -32,15 +32,15 @@ data GameResult = Win | Lose | Draw
 data RankingModel = RankingModel {ratings :: [(Team,Ranking)]} 
 				 deriving (Show)
 								--Teams & Pool Data		  
-data Team = RSA | MEX | URA | FRA | 
-            ARG | NGA | KOR | GRE | 
-            ENG | USA | ALG | SVN | 
-            GER | AUS | SRB | GHA | 
-            NED | DEN | JPN | CMR | 
-            ITA | PAR | NZL | SVK | 
-            BRA | PRK | CIV | POR | 
-            ESP | SWZ | HON | CHI
-				 deriving (Show,Eq,Ord)		
+data Team = BRA | MEX | CRC | CMR | 
+            NED | CHL | ESP | AUS | 
+            COL | GRC | CDV | JPN | 
+            CRC | URG | ITA | ENG | 
+            FRA | SWZ | ECU | HON | 
+            ARG | NIG | BOS | IRN | 
+            GER | USA | PRT | GHA | 
+            BEL | ALG | RUS | KOR |
+				deriving (Show,Eq,Ord)		
 								-- Fifa World Rankings & ELO Rating Sport Index 
 								-- Updated As of 1st July 2014
 let fBRA = 1242, sBRA = 90.6
